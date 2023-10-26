@@ -1,0 +1,19 @@
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.flag-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.flag-item {
+    text-align: center;
+}
+
+.flag-image {
+    max-width: 100px;
+    max-height: 70px;
+}
