@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <title>Atividade IMC</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-6">
+
+        <div class="card">
+          <div class="card-header">
+            <h2 class="text-center">IMC</h2>
+          </div>
+
+          <div class="card-body">
+            <div id="warning"></div>
+            <form action="">
+              <div class="form-group">
+                <label for="altura">Altura (em metros):</label>
+                <input type="text" class="form-control form-control-lg" name="altura" id="altura"
+                  placeholder="Digite o altura">
+              </div>
+              <div class="form-group">
+                <label for="peso">Peso (Kg):</label>
+                <input type="text" class="form-control form-control-lg" name="peso" id="peso"
+                  placeholder="Digite a peso">
+              </div>
+              <div class="form-group">
+                <p>Sexo:</p>
+                <input type="radio" name="sexo" value="masculino" id="masculino" checked>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" value="feminino" id="feminino">
+                <label for="feminino">Feminino</label>
+              </div>
+              <div class="form-group">
+                <label for="imc">Seu IMC é:</label>
+                <input type="text" class="form-control form-control-lg" name="imc" id="imc" readonly>
+              </div>
+              <div class="form-group text-center">
+                <button id="calc-imc-btn" class="btn">
+                  <i class="fa fa-tachometer" aria-hidden="true">
+                  </i>
+                  Calculando o IMC
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
